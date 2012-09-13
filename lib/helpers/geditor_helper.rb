@@ -11,7 +11,7 @@ module GeditorHelper
     end
   end
   
-  def use_geditor
+  def geditor_buttons
     raw %q(<script>gEditor('geditor'); </script>)
   end
 end

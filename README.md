@@ -18,8 +18,8 @@ Or install it yourself as:
 ## Usage
 
 in view for generating text:
-<%= use_geditor %>
-<%= f.text_area :content, :id => "geditor", :class => 'text_area' %>
+<%= geditor_buttons %>
+<%= f.text_area :content, :id => "geditor" %>
 
 in view for display text:
 <%= g_format content %>
