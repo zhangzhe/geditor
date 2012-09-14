@@ -12,12 +12,7 @@ class GeditorUtils
     file = File.expand_path('../stylesheets/geditor.css', __FILE__)
     FileUtils.mkdir_p dir unless File.exists? dir
     FileUtils.cp(file, dir)
-    
-    dir = "app/assets/javascripts"
-    file = File.expand_path('../javascripts/geditor.js', __FILE__)    
-    FileUtils.mkdir_p dir unless File.exists? dir
-    FileUtils.cp(file, dir)
-    
+        
     dir = "app/assets/images"
     folder = File.expand_path('../images/geditor/', __FILE__)    
     FileUtils.mkdir_p dir unless File.exists? dir
