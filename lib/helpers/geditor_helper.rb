@@ -27,13 +27,13 @@ module GeditorHelper
     var textarea;
     var content;
     function gEditor(obj) {
-    	document.write("<img class=\"button\" src=\"/assets/geditor/bold.png\" name=\"btnBold\" title=\"Bold\" onClick=\"doAddTags('*','*','" + obj + "')\">");
-    	document.write("<img class=\"button\" src=\"/assets/geditor/underline.png\" name=\"btnUnderline\" title=\"Underline\" onClick=\"doAddTags('+','+','" + obj + "')\">");
-    	document.write("<img class=\"button\" src=\"/assets/geditor/h1.png\" name=\"btnHead\" title=\"Head1\" onClick=\"doAddTags('[h]','[/h]','" + obj + "')\">");
-    	document.write("<img class=\"button\" src=\"/assets/geditor/ordered.png\" name=\"btnList\" title=\"Unordered List\" onClick=\"doList('<ul>','</ul>','" + obj + "')\">");
-      	document.write("<img class=\"button\" src=\"/assets/geditor/code.png\" name=\"btnCode\" title=\"Code\" onClick=\"doAddTags('[code:ruby]','[/code]','" + obj + "')\">");
-    	document.write("<img class=\"button\" src=\"/assets/geditor/link.png\" name=\"btnLink\" title=\"Insert Link\" onClick=\"doAddTags('[link: link_description]','[/link]','" + obj + "')\">");
-    	document.write("<img class=\"button\" src=\"/assets/geditor/image.png\" name=\"btnPicture\" title=\"Insert Picture\" onClick=\"doAddTags('[img]','[/img]','" + obj + "')\">");
+    	document.write("<img class=\"button\" src=\"/assets/geditor/bold.png\" name=\"btnBold\" title=\"Bold\" onClick=\"doAddTags('*','*','" + obj + "')\">&nbsp;");
+    	document.write("<img class=\"button\" src=\"/assets/geditor/h1.png\" name=\"btnHead\" title=\"Head1\" onClick=\"doAddTags('[h]','[/h]','" + obj + "')\">&nbsp;");
+    	document.write("<img class=\"button\" src=\"/assets/geditor/ordered.png\" name=\"btnList\" title=\"Unordered List\" onClick=\"doList('<ul>','</ul>','" + obj + "')\">&nbsp;");
+      document.write("<img class=\"button\" src=\"/assets/geditor/ruby.png\" name=\"btnRuby\" title=\"Ruby\" onClick=\"doAddTags('[code:ruby]','[/code]','" + obj + "')\">&nbsp;");
+      document.write("<img class=\"button\" src=\"/assets/geditor/delphi.png\" name=\"btnDelphi\" title=\"Delphi\" onClick=\"doAddTags('[code:delphi]','[/code]','" + obj + "')\">&nbsp;");
+    	document.write("<img class=\"button\" src=\"/assets/geditor/link.png\" name=\"btnLink\" title=\"Insert Link\" onClick=\"doAddTags('[link: link_description]','[/link]','" + obj + "')\">&nbsp;");
+    	document.write("<img class=\"button\" src=\"/assets/geditor/image.png\" name=\"btnPicture\" title=\"Insert Picture\" onClick=\"doAddTags('[img]','[/img]','" + obj + "')\">&nbsp;");
     	document.write("<br>"); }
 		
     function doAddTags(tag1,tag2,obj)

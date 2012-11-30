@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.version       = Geditor::VERSION
   
   gem.add_dependency "coderay"
-  gem.add_dependency('actionpack')
+  gem.add_dependency 'actionpack'
 end

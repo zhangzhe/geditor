@@ -6,6 +6,7 @@ This gem distills from gblog, my old light weight blog. it includes light weight
 Add this line to your application's Gemfile:
 
     gem 'geditor'
+    gem "geditor", :path => "vendor/gems"
 
 And then execute:
 

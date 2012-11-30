@@ -43,7 +43,7 @@ class UrlString < GformatString
 end
 
 class RuleString < GformatString
-  RULES = {"*" => "</b>", "+" => "</u>"}
+  RULES = {"*" => "</b>"}
   def format
     @content = self
     unescape_rule = generate_unescape_rule
